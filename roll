@@ -1,0 +1,19 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class roll
+{
+    public static void main(String args[])
+    {
+        Scanner num = new Scanner(System.in);
+        System.out.println("Enter # of sides for your die: ");
+        int dieSides;
+        dieSides = num.nextInt();
+
+        Scanner scan = new Scanner (System.in);
+        Random generator = new Random();
+        int rannum;
+        rannum = generator.nextInt(dieSides) + 1;
+        System.out.println("You rolled a " + rannum);
+    }//end main
+}// end roll
